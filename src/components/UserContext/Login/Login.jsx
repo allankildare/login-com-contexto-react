@@ -7,14 +7,13 @@ function Login() {
     const [user, setUser] = useState('')
     const [password, setPassword] = useState('')
 
-    const handleUserChange = (event) => {
-        setUser(event.target.value)
+    const handleUserChange = ({ target }) => {
+        setUser(target.value)
     }
 
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value)
+    const handlePasswordChange = ({ target }) => {
+        setPassword(target.value)
     }
-    console.log(password)
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
@@ -22,7 +21,7 @@ function Login() {
             <input type="text" onChange={handleUserChange} />
             <label>Senha</label>
             <input type="password" onChange={handlePasswordChange} />
-            <Link to="/conta">
+            <Link to="/conta-fake">
                 <button onClick={() => login(user, password)}>Login</button>
             </Link>
         </div>

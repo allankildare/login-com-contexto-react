@@ -1,0 +1,10 @@
+.backToLogin, .backToLogin:visited {
+    color: #161616;
+    text-decoration: none;
+    transition: .3s ease text-shadow;
+}
+
+.backToLogin:hover {
+    text-shadow: 3px 2px 4px #000000;
+    text-decoration: none;
+}
